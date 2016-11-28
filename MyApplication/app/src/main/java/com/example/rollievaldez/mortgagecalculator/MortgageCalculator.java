@@ -1,5 +1,11 @@
 package com.example.rollievaldez.mortgagecalculator;
 
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 /**
  * Created by G-Cheung on 11/28/2016.
  */
@@ -45,10 +51,29 @@ public class MortgageCalculator {
         double monthlyPayment = calcMonthlyInterest()+ calcMonthlyTax();
         return monthlyPayment;
     }
+
     /*
         function to calculate the Total Interest Paid
      */
     public double totalInterestPaid(){
-        return 0;
+        double totalInterest;
+        totalInterest = (calcMonthlyInterest()*(terms*12))-loanAmount;
+        return totalInterest;
+    }
+
+    /*
+        function to calculate total Property Tax paid
+     */
+    public double totalPropertyTax(){
+        double totalPropTax;
+        totalPropTax = calcMonthlyTax()*(terms*12);
+        return totalPropTax;
+    }
+
+    public String datePaidOff(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd");
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.YEAR, terms);
+        return sdf.format(calendar.getTime());
     }
 }
