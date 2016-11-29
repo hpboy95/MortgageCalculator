@@ -20,14 +20,6 @@
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:id="@+id/Title"/>
 
-    <Button
-        android:text="@string/reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/reset_button"
-        tools:ignore="RelativeOverlap" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -41,40 +33,40 @@
             android:layout_height="wrap_content"
             android:inputType="number|numberDecimal"
             android:ems="10"
-            android:text="@string/home_value"
-            android:id="@+id/homeValue" />
+            android:id="@+id/homeValue"
+            android:hint="@string/home_value" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:text="@string/down_payment"
-            android:id="@+id/downPayment" />
+            android:id="@+id/downPayment"
+            android:hint="@string/down_payment" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:text="@string/apr"
-            android:id="@+id/APR" />
+            android:id="@+id/APR"
+            android:hint="@string/apr" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:text="@string/terms"
-            android:id="@+id/Terms" />
+            android:id="@+id/Terms"
+            android:hint="@string/terms" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:text="@string/tax_rate"
-            android:id="@+id/taxRate" />
+            android:id="@+id/taxRate"
+            android:hint="@string/tax_rate" />
 
         <Button
             android:text="@string/calc_button"
@@ -82,5 +74,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/calcButton" />
     </LinearLayout>
+
+    <Button
+        android:text="@string/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_button"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
