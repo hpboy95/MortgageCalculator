@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.OutputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:id="@+id/Title"
+            android:layout_marginStart="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:text="@string/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/reset_button"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:text="@string/total_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="30sp"
+            android:id="@+id/payment"
+            android:text="@string/payment_title"
+            android:layout_below="@+id/reset_button"
+            android:layout_alignEnd="@+id/Title" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment"
+            android:layout_alignStart="@+id/payment"
+            android:layout_marginTop="68dp"
+            android:id="@+id/Total_tax_text" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_below="@+id/payment"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="57dp"
+            android:id="@+id/total_tax_value" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/total_tax_value"
+            android:id="@+id/Total_interest_value" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_below="@+id/Total_interest_value"
+            android:layout_alignEnd="@+id/Total_interest_value"
+            android:layout_marginTop="44dp"
+            android:id="@+id/monthly_payment_value" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Total_interest_value"
+            android:layout_alignEnd="@+id/Total_tax_text"
+            android:id="@+id/Total_interest_text" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Total_interest_value"
+            android:layout_alignEnd="@+id/Total_interest_text"
+            android:layout_marginTop="31dp"
+            android:id="@+id/Monthly_payment_text" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/payby_value"
+            android:layout_below="@+id/monthly_payment_value"
+            android:layout_alignStart="@+id/monthly_payment_value" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payby_text"
+            android:layout_alignBaseline="@+id/payby_value"
+            android:layout_alignBottom="@+id/payby_value"
+            android:layout_alignEnd="@+id/Monthly_payment_text" />
+
+    </RelativeLayout>
+</FrameLayout>

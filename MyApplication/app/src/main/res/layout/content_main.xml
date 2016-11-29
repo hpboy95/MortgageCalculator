@@ -18,14 +18,14 @@
         android:layout_height="wrap_content"
         android:text="@string/app_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:id="@+id/textView"/>
+        android:id="@+id/Title"/>
 
     <Button
         android:text="@string/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:id="@+id/button"
+        android:id="@+id/reset_button"
         tools:ignore="RelativeOverlap" />
 
     <LinearLayout
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/reset_button"
         android:layout_alignParentStart="true">
 
         <EditText
@@ -42,7 +42,7 @@
             android:inputType="number|numberDecimal"
             android:ems="10"
             android:text="@string/home_value"
-            android:id="@+id/editText2" />
+            android:id="@+id/homeValue" />
 
         <EditText
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:text="@string/down_payment"
-            android:id="@+id/editText3" />
+            android:id="@+id/downPayment" />
 
         <EditText
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:text="@string/apr"
-            android:id="@+id/editText4" />
+            android:id="@+id/APR" />
 
         <EditText
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:text="@string/terms"
-            android:id="@+id/editText5" />
+            android:id="@+id/Terms" />
 
         <EditText
             android:layout_width="match_parent"
@@ -74,13 +74,13 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:text="@string/tax_rate"
-            android:id="@+id/editText6" />
+            android:id="@+id/taxRate" />
 
         <Button
             android:text="@string/calc_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button2" />
+            android:id="@+id/calcButton" />
     </LinearLayout>
 
 </RelativeLayout>
