@@ -76,4 +76,24 @@ public class MortgageCalculator {
         calendar.add(Calendar.YEAR, terms);
         return sdf.format(calendar.getTime());
     }
+
+    public void setHomeValue(double homeValue){
+        this.homeValue = homeValue;
+    }
+
+    public void setLoanAmount(double loanAmount){
+        this.loanAmount = loanAmount;
+    }
+
+    public void setAPR(double APR){
+        this.APR = APR / 100;
+    }
+
+    public void setTerms(int terms){
+        this.terms = terms;
+    }
+
+    public void setPropertyTaxRate(double propertyTaxRate){
+        this.propertyTaxRate = propertyTaxRate;
+    }
 }
